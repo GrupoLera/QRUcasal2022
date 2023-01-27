@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRUcasal2022.Login"
+             BackgroundColor="White"
+             
+            
+            Title="QR-Ucasal">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+
+            <Image Source="UcaInfo.png" WidthRequest="300" HeightRequest="300" />
+
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" TextColor="#0F4378" PlaceholderColor="#525252" BackgroundColor="#DCDCDC" ></Entry>
+
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" TextColor="#0F4378" PlaceholderColor="#525252" BackgroundColor="#DCDCDC"></Entry>
+
+            <Button
+                VerticalOptions="Center"
+                Text="Iniciar Sesion"
+                TextColor="#0F4378"
+                BackgroundColor="Transparent"
+                BorderColor="#0F4378"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="Button_Clicked"
+                Margin="10"/>
+
+            <Button
+                VerticalOptions="Center"
+                Text="Te olvidaste culiau?"
+                TextColor="#0F4378"
+                BackgroundColor="Transparent"
+                FontSize="Micro"
+                
+                
+               />
+                <!--Clicked="Button_Clicked"-->
+                
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

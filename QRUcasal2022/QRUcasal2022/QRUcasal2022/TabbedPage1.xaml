@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRUcasal2022.TabbedPage1"
+             xmlns:local="clr-namespace:QRUcasal2022"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            
+            BarBackgroundColor="DarkCyan"
+            SelectedTabColor="Black"
+            BarTextColor="Wheat"
+            
+            Title="QR-Ucasal"
+            
+            >
+  <!--Pages can be added as references or inline-->
+    <local:MainPage  Title="Inicio"/>
+    <NavigationPage Title="Novedades">
+        <x:Arguments>
+            <ContentPage Title="Novedades" BackgroundColor="AliceBlue">
+                <Button Text="Navegar"/>
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="QR-aula">
+        <x:Arguments>
+            <ContentPage Title="Tab 2" BackgroundColor="Purple">
+
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage Title="Tab 3">
+        <x:Arguments>
+            <ContentPage BackgroundColor="Aqua">
+
+            </ContentPage>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
